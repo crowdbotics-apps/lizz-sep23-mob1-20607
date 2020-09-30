@@ -31,7 +31,7 @@ export class _Blank extends React.Component {
         to blank screen 1 - actually action removed
       </Text>
       <Input
-        placeholder="Number Input Placeholder"
+        placeholder="Number Input Placeholder test"
         editable={true}
         keyboardType="numeric"
         textStyle={{
