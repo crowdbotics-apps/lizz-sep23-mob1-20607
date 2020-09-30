@@ -40,6 +40,12 @@ export class _Blank extends React.Component {
       >
         Go to blank screen 2
       </Button>
+      <Image resizeMode="cover" style={this.props.themedStyle.Image_8} />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen0106826")}
+      >
+        <Text style={this.props.themedStyle.Text_6}>Go to blank screen 0</Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -130,6 +136,56 @@ export default Blank = withStyles(_Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0,
     textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Image_8: {
+    height: 200,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
+  },
+  Text_6: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
     textAlignVertical: "center",
     textDecorationLine: "none",
     textTransform: "none",
