@@ -41,11 +41,9 @@ export class _Blank extends React.Component {
         Go to blank screen 2
       </Button>
       <Image resizeMode="cover" style={this.props.themedStyle.Image_8} />
-      <TouchableOpacity
-        onPress={() => this.props.navigation.navigate("BlankScreen0106826")}
-      >
-        <Text style={this.props.themedStyle.Text_6}>Go to blank screen 0</Text>
-      </TouchableOpacity>
+      <Text style={this.props.themedStyle.Text_6}>
+        Go to blank screen 0 - removed action
+      </Text>
     </View>
   )
 }
