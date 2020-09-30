@@ -30,25 +30,21 @@ export class _Blank extends React.Component {
         this is blank screen 0. the below number input onpress should navigate
         to blank screen 1
       </Text>
-      <TouchableOpacity
-        onPress={() => this.props.navigation.navigate("BlankScreen1106827")}
-      >
-        <Input
-          placeholder="Number Input Placeholder"
-          editable={true}
-          keyboardType="numeric"
-          textStyle={{
-            fontSize: 12,
-            color: "#000000",
-            textAlign: "left",
-            fontWeight: "normal",
-            fontStyle: "normal"
-          }}
-          style={this.props.themedStyle.Input_6}
-          value={this.state.Input_6}
-          onChangeText={nextValue => this.setState({ Input_6: nextValue })}
-        />
-      </TouchableOpacity>
+      <Input
+        placeholder="Number Input Placeholder"
+        editable={true}
+        keyboardType="numeric"
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_6}
+        value={this.state.Input_6}
+        onChangeText={nextValue => this.setState({ Input_6: nextValue })}
+      />
     </View>
   )
 }
