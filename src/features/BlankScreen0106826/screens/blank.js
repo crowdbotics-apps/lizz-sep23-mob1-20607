@@ -28,7 +28,7 @@ export class _Blank extends React.Component {
     <View style={this.props.themedStyle.View_1}>
       <Text style={this.props.themedStyle.Text_4}>
         this is blank screen 0. the below number input onpress should navigate
-        to blank screen 1
+        to blank screen 1 - actually action removed
       </Text>
       <Input
         placeholder="Number Input Placeholder"
