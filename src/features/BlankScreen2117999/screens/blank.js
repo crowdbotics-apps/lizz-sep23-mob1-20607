@@ -26,14 +26,10 @@ export class _Blank extends React.Component {
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
-      <TouchableOpacity
-        onPress={() => this.props.navigation.navigate("BlankScreen1106827")}
-      >
-        <Text style={this.props.themedStyle.Text_3}>
-          this is blank screen 2. when this text is pressed, should navigate to
-          blank screen 1
-        </Text>
-      </TouchableOpacity>
+      <Text style={this.props.themedStyle.Text_3}>
+        this is blank screen 2. when this text is pressed, should navigate to
+        blank screen 1 - removed action
+      </Text>
     </View>
   )
 }
