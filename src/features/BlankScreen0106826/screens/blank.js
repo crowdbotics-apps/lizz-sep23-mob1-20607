@@ -22,23 +22,29 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Input_6: "" }
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
-      <Button
+      <Text style={this.props.themedStyle.Text_4}>
+        this is blank screen 0. the below number input onchange should navigate
+        to blank screen 1
+      </Text>
+      <Input
+        placeholder="Number Input Placeholder"
+        editable={true}
+        keyboardType="numeric"
         textStyle={{
           fontSize: 12,
           color: "#000000",
-          textAlign: "center",
+          textAlign: "left",
           fontWeight: "normal",
           fontStyle: "normal"
         }}
-        style={this.props.themedStyle.Button_3}
-        onPress={() => alert("Pressed!")}
-      >
-        Press me!
-      </Button>
+        style={this.props.themedStyle.Input_6}
+        value={this.state.Input_6}
+        onChangeText={nextValue => this.setState({ Input_6: nextValue })}
+      />
     </View>
   )
 }
@@ -74,7 +80,37 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
-  Button_3: {
+  Text_4: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_6: {
     width: "100%",
     marginLeft: 0,
     marginRight: 0,
@@ -87,7 +123,7 @@ export default Blank = withStyles(_Blank, theme => ({
     overflow: "visible",
     fontSize: 12,
     color: "#000000",
-    backgroundColor: "#3366FF",
+    backgroundColor: "#ffffff",
     fontStyle: "normal",
     fontWeight: "normal",
     borderColor: "#000000",
@@ -98,7 +134,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0,
-    textAlign: "center",
+    textAlign: "left",
     textAlignVertical: "center",
     textDecorationLine: "none",
     textTransform: "none",
